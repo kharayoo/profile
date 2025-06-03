@@ -1489,9 +1489,6 @@ footer {
 .grid-item .send-btn:hover {
     background: var(--ultramarine-blue);
 }
-span{
-    color: blue;
-}
 
 .copyright {
     background: hsl(231, 90%, 8%);
