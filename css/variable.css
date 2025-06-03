@@ -1,0 +1,56 @@
+
+
+
+/* =========== VARIABLES =========== */
+:root{
+    /* Primary Colors */
+    --primary-color: #1478ff; /* Yellow/Gold - Primary brand color */
+    --primary-dark: #1478ff; /* Darker shade of primary */
+    --primary-light: #FFD166; /* Lighter shade of primary */
+    
+    /* Secondary Colors */
+    --secondary-color: #0062ff; /* Blue - Secondary brand color */
+    --secondary-dark: #0047B3; /* Darker shade of secondary */
+    --secondary-light: #4D94FF; /* Lighter shade of secondary */
+    
+    /* Neutral Colors */
+    --dark-blue: #000000; /* Dark blue for text and backgrounds */
+    --light-gray: #E5E5E5; /* Light gray for backgrounds */
+    --medium-gray: #CCCCCC; /* Medium gray for borders */
+    --dark-gray: #787878; /* Dark gray for secondary text */
+    --off-white: #f2f3f7; /* Off-white for backgrounds */
+    --white: #ffffff; /* Pure white */
+    
+    /* Utility Colors */
+    --success: #28a745; /* Green for success messages */
+    --info: #17a2b8; /* Teal for information */
+    --warning: #ffc107; /* Yellow for warnings */
+    --danger: #dc3545; /* Red for errors */
+    
+    /* Legacy Variables (for backward compatibility) */
+    --red-orange-color-wheel: var(--primary-color);
+    --ultramarine-blue: var(--secondary-color);
+    --lavender-blue: #d2dafe;
+    --oxford-blue: var(--dark-blue);
+    --sonic-silver: var(--dark-gray);
+    --blue-crayola: var(--secondary-light);
+    --cultured: var(--off-white);
+
+    --fs-1: 38px;
+    --fs-2: 35px;
+    --fs-3: 30px;
+    --fs-4: 22px;
+    --fs-5: 20px;
+    --fs-6: 15px;
+
+    --fw-5: 500;
+    --fw-6: 600;
+    --fw-7: 700;
+    --fw-8: 800;
+    --fw-9: 900;
+
+    --px: 15px;
+    --py: 80px;
+
+    --default-transition: 0.25s ease;
+}

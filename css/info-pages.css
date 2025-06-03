@@ -1,0 +1,175 @@
+/* =========== INFO PAGES CSS =========== */
+/* Styles for Terms & Conditions, FAQ, and Privacy Policy pages */
+
+/* Common container styles */
+.terms-container,
+.privacy-container,
+.faq-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: var(--white);
+    border-radius: 8px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+/* Section styles */
+.terms-section,
+.privacy-section,
+.faq-section {
+    position: relative;
+    padding: var(--py) var(--px);
+    overflow: hidden;
+    background: var(--cultured);
+}
+
+.terms-section .section-subtitle,
+.privacy-section .section-subtitle,
+.faq-section .section-subtitle,
+.terms-section .section-title,
+.privacy-section .section-title,
+.faq-section .section-title {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.terms-section .section-title,
+.privacy-section .section-title,
+.faq-section .section-title {
+    margin-bottom: 50px;
+}
+
+/* Content styling */
+.terms-content h3,
+.privacy-content h3,
+.faq-category h3 {
+    font-size: var(--fs-4);
+    font-weight: var(--fw-7);
+    color: var(--primary-color);
+    margin: 30px 0 15px;
+}
+
+.terms-content h4,
+.privacy-content h4 {
+    font-size: var(--fs-5);
+    font-weight: var(--fw-6);
+    color: var(--oxford-blue);
+    margin: 20px 0 10px;
+}
+
+.terms-content p,
+.privacy-content p {
+    margin-bottom: 15px;
+}
+
+/* List styling */
+.terms-list,
+.privacy-list {
+    margin: 15px 0 25px 20px;
+}
+
+.terms-list li,
+.privacy-list li {
+    position: relative;
+    padding-left: 15px;
+    margin-bottom: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: var(--fs-6);
+    color: var(--sonic-silver);
+    line-height: 1.6;
+}
+
+.terms-list li::before,
+.privacy-list li::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background-color: var(--primary-color);
+}
+
+/* FAQ specific styles */
+.faq-category {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.faq-category h3 {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+    border-bottom: 1px solid var(--light-gray);
+    padding-bottom: 20px;
+}
+
+.faq-question {
+    font-size: var(--fs-5);
+    font-weight: var(--fw-7);
+    color: var(--oxford-blue);
+    margin-bottom: 10px;
+    cursor: pointer;
+    position: relative;
+    padding-right: 30px;
+    transition: color 0.3s ease;
+}
+
+.faq-question:hover {
+    color: var(--primary-color);
+}
+
+.faq-question::after {
+    content: "+";
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.faq-item.active .faq-question::after {
+    content: "-";
+}
+
+.faq-answer {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.faq-item.active .faq-answer {
+    max-height: 1000px; /* Arbitrary large value */
+}
+
+/* Media Queries */
+@media (min-width: 768px) {
+    .terms-container,
+    .privacy-container,
+    .faq-container {
+        padding: 40px;
+    }
+    
+    .terms-content h3,
+    .privacy-content h3,
+    .faq-category h3 {
+        margin: 40px 0 20px;
+    }
+}
+
+@media (min-width: 992px) {
+    .terms-container,
+    .privacy-container,
+    .faq-container {
+        padding: 50px;
+    }
+    
+    .faq-question {
+        font-size: var(--fs-4);
+    }
+}
